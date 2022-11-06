@@ -1,7 +1,8 @@
 from fileinput import filename
 from diagrams import Diagram
-from diagrams.aws.security import KMS
-from diagrams.aws.storage import S3
+from diagrams.aws.security import IAMRole
+from diagrams.aws.compute import Fargate
+from diagrams.aws.database import Dynamodb
 
-with Diagram("Deployment Bucket Pattern Overview", show=False, direction="TB", filename='res/overview', outformat='png'):
-    KMS("Encryption Key (CMK)") >> S3("Deployment S3 Bucket")
+with Diagram("Fargate DynamoDB Pattern Overview", show=False, direction="TB", filename='res/overview', outformat='png'):
+    IAMRole("DynamoDB Access Role") >> Fargate("Service")>> Dynamodb("Dynamodb Table")
