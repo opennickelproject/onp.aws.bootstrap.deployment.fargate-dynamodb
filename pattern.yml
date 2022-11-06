@@ -1,0 +1,29 @@
+metadata:
+  pattern-id: onp.aws.bootstrap.deployment.fargate-dynamodb
+  pattern-name: fargate-dynamodb
+  pattern-version: 1.0.0
+  pattern-description: Implement an AWS Fargate service that can write/read to an Amazon DynamoDB table, https://docs.aws.amazon.com/solutions/latest/constructs/aws-fargate-dynamodb.html
+  organisation-id: onp
+  pattern-categories: 
+              - bootstrap
+
+lifecycle:
+  create:
+    commands:
+      - bash lifecycle/create.sh
+
+  delete:
+    commands:
+      - bash lifecycle/delete.sh
+
+  update:
+    commands:
+      - bash lifecycle/update.sh
+
+  upgrade:
+    commands:
+      - bash lifecycle/upgrade.sh
+
+dependencies:
+
+
