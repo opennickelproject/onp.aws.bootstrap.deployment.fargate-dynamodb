@@ -4,10 +4,8 @@
 | attribute               | value                                         |
 | ----------------------- | --------------------------------------------- |
 | pattern-id              | onp.aws.bootstrap.deployment.fargate-dynamodb |
-| pattern-name            | fargate-dynamodb                              |
-| pattern-version         | 1.0.1                                         |
+| pattern-version         | 1.0.2                                         |
 | pattern-description     | Implement an AWS Fargate service that can write/read to an Amazon DynamoDB table, https://docs.aws.amazon.com/solutions/latest/constructs/aws-fargate-dynamodb.html deployments.                                                              |
-| organisation-id         | onp                                           |
 | pattern-categories      | bootstrap                                     |
 
 ## What is this pattern?
